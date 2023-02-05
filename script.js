@@ -1,7 +1,7 @@
 
 function frameLoaded() {
     const fwl = document.querySelector("iframe").contentWindow.length; // frame window length.
-    if (fwl === 0) {
+    if (!document.getElementById('scriptFrame').contentWindow.document.getElementById("pageCorrectlyLoaded")) {
 
         function fillBody(text, color) {
             const body = document.getElementsByTagName("body")[0];
